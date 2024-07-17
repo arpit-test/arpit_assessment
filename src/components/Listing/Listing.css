@@ -1,0 +1,123 @@
+.listing-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #f0f4f8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.university-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+.university-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+.university-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #f5f7fa, #e8ecf1);
+  }
+
+.card-content {
+  padding: 1.5rem;
+  position: relative;
+  height: 200px; /* Adjust this value as needed */
+}
+
+.card-content h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.country {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.card-actions {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.view-button {
+  background-color: #6e8efb;
+  color: white;
+  text-decoration: none;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.university-card:hover .card-content h2 {
+  color: #4a90e2;
+}
